@@ -16,7 +16,7 @@ Web API that provides endpoints to perform CAT calculations.
 
 ### Configuration
 
-- Hostname or IP address can be set with the `WB_CAT_HOSTNAME` environment
+- The listen address can be set with the `WB_CAT_LISTEN_ADDRESS` environment
 variable. Defaults to http://127.0.0.1
 - Port can be set with the `WB_CAT_PORT` environment variable. Defaults to
 8000
