@@ -1,0 +1,12 @@
+[Unit]
+Description=ALiSe Plumber API
+
+[Service]
+Environment=WB_CAT_LISTEN_ADDRESS=<LISTEN_ADDRESS>
+Environment=WB_CAT_PORT=<PORT_NUMBER>
+ExecStart=/usr/bin/Rscript run.R
+Restart=on-abnormal
+WorkingDirectory=<PATH TO alise_r DIRECTORY>
+
+[Install]
+WantedBy=multi-user.target
